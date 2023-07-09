@@ -1,5 +1,6 @@
 # addressDesensitization
 
+* Blog: https://histonevon.top/archives/java-address-desensitization
 * 将中华人民共和国的地址脱敏到第二级（不一定是地区级）
 * 中华人民共和国的地区级行政区划分为四种：地级市、地区、盟、自治州
 * 地址脱敏思路如下
@@ -10,7 +11,7 @@
     * 如果是【地级市】即可结束
     * 如果是【直辖市】则找到下一级的【区】或【县】
   * 如果均不符合则脱敏2/3的地址（包括英文）
-
+  * 使用到了`cn.hutool.core.util.StrUtil`
 * 示例
 
 ```java
