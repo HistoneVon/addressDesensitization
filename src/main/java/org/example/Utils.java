@@ -6,7 +6,7 @@ package org.example;
  * @date 2023/7/9 14:15
  */
 
-public class utils {
+public class Utils {
     /**
      * 返回子串在母串中最后一个字符的索引
      * @param str 母串
