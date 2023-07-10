@@ -1,5 +1,7 @@
 package org.example;
 
+import cn.hutool.core.util.StrUtil;
+
 /**
  * @author Histone Von fengclchn@outlook.com
  * @createdBy Histone Von
@@ -15,7 +17,7 @@ public class Utils {
      */
     public static int strStr(String str, String subStr) {
         int index = -2;
-        if (!str.isEmpty() && !subStr.isEmpty()) {
+        if (!StrUtil.isBlank(str) && !StrUtil.isBlank(subStr)) {
             index = str.indexOf(subStr);
             if (index != -1) {
                 index += subStr.length() - 1;
